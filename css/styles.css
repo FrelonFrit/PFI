@@ -1,0 +1,213 @@
+/* classes */
+
+.grille{
+    display: grid;
+    margin: 0%;
+    width: 100vw;
+    grid-template-rows: fit-content 5fr fit-content;
+}
+
+.liens{
+    color:#1C5588;
+    text-decoration: none;
+}
+
+.txtCentre{
+    text-align: center;
+}
+
+.entete{
+    font-size: 1.5em;
+}
+
+.padding2pc{
+    padding: 2%;
+}
+
+.divHoraire{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-grow: 1;
+}
+
+.totMatin{
+    grid-column:2/4;
+}
+
+.lundi{
+    grid-row: 2/3;
+}
+
+.jours{
+    grid-column-start: 1;
+}
+
+.menu{
+    position: relative;
+    display: inline-block;
+}
+
+.menuBtn{
+    background-color: #04AA6D;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+}
+
+.menuContenu{
+    display: none;
+    position: absolute;
+    background-color: #ef9b9b;
+    min-width: 6em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* ids */
+
+#grilleProf{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    max-width: 80%;
+}
+
+#grilleHoraire{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grilleSujet{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2%;
+}
+
+#listeTp{
+    list-style: "TPs ";
+}
+
+#listeLabo{
+    list-style: "Labos ";
+}
+
+#imageMain{
+    float: right;
+    max-width: 15%;
+    max-height: 15%;
+    margin: 2%;
+    border-radius: 100%;
+}
+
+#galerie{
+    justify-content: justify;
+    padding-left: 25%;
+}
+
+#kb2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* balises directes */
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #97bad9;
+}
+
+header{
+    background-color:#7ACFB0;
+}
+
+footer{
+    background-color: #e75f10;
+}
+
+a{
+    display: inline-block;
+}
+
+h3{
+    display: inline-block;
+}
+
+figure{
+    display: inline-block;
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    max-width: 160px;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+/* enfants */
+
+a>div{
+    padding: 2em;
+    flex: 1 1 12em;
+}
+
+a>span{
+    padding: 1em;
+}
+
+li>a{
+    color:#1c5588;
+    text-decoration: none;
+}
+
+#grilleProf div:nth-child(4n +1){
+    background-color:#87bae7;
+}
+
+#grilleProf div:nth-child(4n +2){
+    background-color: #87bae7;
+}
+
+#grilleProf div:nth-child(4n +3){
+    background-color: rgb(247, 200, 112);
+}
+
+#grilleProf div:nth-child(4n +4){
+    background-color:rgb(247, 200, 112);
+}
+
+.menuContenu a{
+    padding: 4% 2%;
+    text-decoration: none;
+    display: block;
+}
+
+#kb2>div{
+    padding: 5%;
+}
+
+/* pseudo-classes */
+
+a:hover{
+    color:#FBCE9E;
+}
+
+a:active{
+    color:#FBCE9E;
+}
+
+#galerie figure:hover{
+    border: 1px solid #777;
+}
+
+.menu:hover .menuContenu{
+    display: block;
+}
+
+.menu:hover .menuBtn{
+    background-color: darkkhaki;
+}
