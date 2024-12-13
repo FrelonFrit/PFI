@@ -38,6 +38,30 @@
     grid-row: 2/3;
 }
 
+.mardi{
+    grid-row: 3/4;
+}
+
+.mercredi{
+    grid-row: 4/5;
+}
+
+.jeudi{
+    grid-row: 5/6;
+}
+
+.vendredi{
+    grid-row: 6/7;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.italique{
+    font-style: italic;
+}
+
 .jours{
     grid-column-start: 1;
 }
